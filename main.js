@@ -6,7 +6,9 @@ var audio = {
   "allahu-akbar": new Audio("sounds/allahu-akbar.mp3"),
   "nobody-gives-a-shit": new Audio("sounds/nobody-gives-a-shit.mp3"),
   "now-thats-edgy-as-fuck": new Audio("sounds/now-thats-edgy-as-fuck.mp3"),
-  "fuck-you": new Audio("sounds/fuck-you.mp3")
+  "fuck-you": new Audio("sounds/fuck-you.mp3"),
+  "khaled-woo": new Audio("sounds/khaled-woo.mp3"),
+  "bradberry": new Audio("sounds/bradberry.mp3")
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -64,6 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
       audio["fuck-you"].pause();
       audio["fuck-you"].load();
       audio["fuck-you"].play();
+    });
+
+    document.getElementById('khaled-woo').addEventListener('click', function() {
+      audio["khaled-woo"].pause();
+      audio["khaled-woo"].load();
+      audio["khaled-woo"].play();
+    });
+
+    document.getElementById('bradberry').addEventListener('click', function() {
+      audio["bradberry"].pause();
+      audio["bradberry"].load();
+      audio["bradberry"].play();
     });
 
 });
