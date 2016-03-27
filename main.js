@@ -5,7 +5,8 @@ var audio = {
   "normies": new Audio("sounds/normies.mp3"),
   "allahu-akbar": new Audio("sounds/allahu-akbar.mp3"),
   "nobody-gives-a-shit": new Audio("sounds/nobody-gives-a-shit.mp3"),
-  "now-thats-edgy-as-fuck": new Audio("sounds/now-thats-edgy-as-fuck.mp3")
+  "now-thats-edgy-as-fuck": new Audio("sounds/now-thats-edgy-as-fuck.mp3"),
+  "fuck-you": new Audio("sounds/fuck-you.mp3")
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,6 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
       audio["now-thats-edgy-as-fuck"].pause();
       audio["now-thats-edgy-as-fuck"].load();
       audio["now-thats-edgy-as-fuck"].play();
+    });
+
+    document.getElementById('fuck-you').addEventListener('click', function() {
+      audio["fuck-you"].pause();
+      audio["fuck-you"].load();
+      audio["fuck-you"].play();
     });
 
 });
