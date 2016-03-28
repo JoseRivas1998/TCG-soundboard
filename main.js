@@ -13,6 +13,12 @@ var audio = {
   "prettygood": new Audio("sounds/prettygood.mp3")
 };
 
+function playSound(prop) {
+  audio[prop].pause();
+  audio[prop].load();
+  audio[prop].play();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('stopAll').addEventListener('click', function() {
@@ -23,75 +29,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('tru').addEventListener('click', function() {
-      audio["tru"].pause();
-      audio["tru"].load();
-      audio["tru"].play();
+      playSound("tru");
     });
 
     document.getElementById('gimme-dat-pussy').addEventListener('click', function() {
-      audio["gimme-dat-pussy"].pause();
-      audio["gimme-dat-pussy"].load();
-      audio["gimme-dat-pussy"].play();
+      playSound("gimme-dat-pussy");
     });
 
     document.getElementById('lemon').addEventListener('click', function() {
-      audio["lemon"].pause();
-      audio["lemon"].load();
-      audio["lemon"].play();
+      playSound("lemon");
     });
 
     document.getElementById('normies').addEventListener('click', function() {
-      audio["normies"].pause();
-      audio["normies"].load();
-      audio["normies"].play();
+      playSound("normies");
     });
 
     document.getElementById('allahu-akbar').addEventListener('click', function() {
-      audio["allahu-akbar"].pause();
-      audio["allahu-akbar"].load();
-      audio["allahu-akbar"].play();
+      playSound("allahu-akbar");
     });
 
     document.getElementById('nobody-gives-a-shit').addEventListener('click', function() {
-      audio["nobody-gives-a-shit"].pause();
-      audio["nobody-gives-a-shit"].load();
-      audio["nobody-gives-a-shit"].play();
+      playSound("nobody-gives-a-shit");
     });
 
     document.getElementById('now-thats-edgy-as-fuck').addEventListener('click', function() {
-      audio["now-thats-edgy-as-fuck"].pause();
-      audio["now-thats-edgy-as-fuck"].load();
-      audio["now-thats-edgy-as-fuck"].play();
+      playSound("now-thats-edgy-as-fuck");
     });
 
     document.getElementById('fuck-you').addEventListener('click', function() {
-      audio["fuck-you"].pause();
-      audio["fuck-you"].load();
-      audio["fuck-you"].play();
+      playSound("fuck-you");
     });
 
     document.getElementById('khaled-woo').addEventListener('click', function() {
-      audio["khaled-woo"].pause();
-      audio["khaled-woo"].load();
-      audio["khaled-woo"].play();
+      playSound("khaled-woo");
     });
 
     document.getElementById('bradberry').addEventListener('click', function() {
-      audio["bradberry"].pause();
-      audio["bradberry"].load();
-      audio["bradberry"].play();
+      playSound("bradberry");
     });
 
     document.getElementById('you-mad-bro').addEventListener('click', function() {
-      audio["you-mad-bro"].pause();
-      audio["you-mad-bro"].load();
-      audio["you-mad-bro"].play();
+      playSound("you-mad-bro");
     });
 
     document.getElementById('prettygood').addEventListener('click', function() {
-      audio["prettygood"].pause();
-      audio["prettygood"].load();
-      audio["prettygood"].play();
+      playSound("prettygood");
     });
 
 });
