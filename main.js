@@ -13,67 +13,38 @@ var audio = {
   "prettygood": new Audio("sounds/prettygood.mp3")
 };
 
-function playSound(prop) {
-  audio[prop].pause();
-  audio[prop].load();
-  audio[prop].play();
-}
-
 document.addEventListener('DOMContentLoaded', function() {
+
+    for(var prop in audio) {
+      addSound(prop);
+    }
 
     document.getElementById('stopAll').addEventListener('click', function() {
       for(var prop in audio) {
-        audio[prop].pause();
-        audio[prop].load();
+        stopSound(prop);
       }
     });
 
-    document.getElementById('tru').addEventListener('click', function() {
-      playSound("tru");
-    });
-
-    document.getElementById('gimme-dat-pussy').addEventListener('click', function() {
-      playSound("gimme-dat-pussy");
-    });
-
-    document.getElementById('lemon').addEventListener('click', function() {
-      playSound("lemon");
-    });
-
-    document.getElementById('normies').addEventListener('click', function() {
-      playSound("normies");
-    });
-
-    document.getElementById('allahu-akbar').addEventListener('click', function() {
-      playSound("allahu-akbar");
-    });
-
-    document.getElementById('nobody-gives-a-shit').addEventListener('click', function() {
-      playSound("nobody-gives-a-shit");
-    });
-
-    document.getElementById('now-thats-edgy-as-fuck').addEventListener('click', function() {
-      playSound("now-thats-edgy-as-fuck");
-    });
-
-    document.getElementById('fuck-you').addEventListener('click', function() {
-      playSound("fuck-you");
-    });
-
-    document.getElementById('khaled-woo').addEventListener('click', function() {
-      playSound("khaled-woo");
-    });
-
-    document.getElementById('bradberry').addEventListener('click', function() {
-      playSound("bradberry");
-    });
-
-    document.getElementById('you-mad-bro').addEventListener('click', function() {
-      playSound("you-mad-bro");
-    });
-
-    document.getElementById('prettygood').addEventListener('click', function() {
-      playSound("prettygood");
+    document.getElementById('playAll').addEventListener('click', function() {
+      for(var prop in audio) {
+        playSound(prop);
+      }
     });
 
 });
+
+function playSound(prop) {
+  stopSound(prop);
+  audio[prop].play();
+}
+
+function addSound(prop) {
+  document.getElementById(prop).addEventListener('click', function() {
+    playSound(prop);
+  });
+}
+
+function stopSound(prop) {
+  audio[prop].pause();
+  audio[prop].load();
+}

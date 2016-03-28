@@ -23,26 +23,9 @@ var audio = {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    addSound("bread");
-    addSound("butter");
-    addSound("cheese");
-    addSound("chicken");
-    addSound("coffee");
-    addSound("eggs");
-    addSound("fish");
-    addSound("french-fries");
-    addSound("hamburger");
-    addSound("hot-dog");
-    addSound("jam");
-    addSound("juice");
-    addSound("noodles");
-    addSound("pepper");
-    addSound("pizza");
-    addSound("rice");
-    addSound("salt");
-    addSound("sandwich");
-    addSound("soda");
-    addSound("water");
+    for(var prop in audio) {
+      addSound(prop);
+    }
 
     document.getElementById('stopAll').addEventListener('click', function() {
       for(var prop in audio) {
