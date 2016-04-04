@@ -10,7 +10,13 @@ var audio = {
   "khaled-woo": new Audio("sounds/khaled-woo.mp3"),
   "bradberry": new Audio("sounds/bradberry.mp3"),
   "you-mad-bro": new Audio("sounds/you-mad-bro.mp3"),
-  "prettygood": new Audio("sounds/prettygood.mp3")
+  "prettygood": new Audio("sounds/prettygood.mp3"),
+  "aint-having-that-shit": new Audio("sounds/aint-having-that-shit.mp3"),
+  "am-i-dead-yet": new Audio("sounds/am-i-dead-yet.mp3"),
+  "spirits-be-gone": new Audio("sounds/spirits-be-gone.mp3"),
+  "schindlers-list-hd": new Audio("sounds/schindlers-list-hd.mp3"),
+  "1910-scary": new Audio("sounds/1910-scary.mp3"),
+  "not-even-once": new Audio("sounds/not-even-once.mp3")
 };
 
 document.addEventListener('DOMContentLoaded', function() {
