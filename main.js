@@ -16,7 +16,8 @@ var audio = {
   "spirits-be-gone": new Audio("sounds/spirits-be-gone.mp3"),
   "schindlers-list-hd": new Audio("sounds/schindlers-list-hd.mp3"),
   "1910-scary": new Audio("sounds/1910-scary.mp3"),
-  "not-even-once": new Audio("sounds/not-even-once.mp3")
+  "not-even-once": new Audio("sounds/not-even-once.mp3"),
+  "here-comes-the-clarke": new Audio("sounds/here-comes-the-clarke.mp3")
 };
 
 document.addEventListener('DOMContentLoaded', function() {
