@@ -19,7 +19,8 @@ var audio = {
   "not-even-once": new Audio("sounds/not-even-once.mp3"),
   "here-comes-the-clarke": new Audio("sounds/here-comes-the-clarke.mp3"),
   "wednesday_1": new Audio("sounds/wednesday_1.mp3"),
-  "wednesday_2": new Audio("sounds/wednesday_2.mp3")
+  "wednesday_2": new Audio("sounds/wednesday_2.mp3"),
+  "smash_the_like": new Audio("sounds/smash_the_like.mp3")
 };
 
 document.addEventListener('DOMContentLoaded', function() {
